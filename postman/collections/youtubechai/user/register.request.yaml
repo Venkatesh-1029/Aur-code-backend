@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{server}}/user/register"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: fullName
+      value: two
+      disabled: false
+    - type: text
+      key: email
+      value: three@gmail.com
+      disabled: false
+    - type: text
+      key: password
+      value: "123456789"
+      disabled: false
+    - type: text
+      key: username
+      value: three
+      disabled: false
+    - type: file
+      key: avatar
+      src:
+        - postman-cloud:///1f1c92e4-2ea8-43a0-aed5-d646b33ec6d8
+      disabled: false
+    - type: file
+      key: coverImage
+      src:
+        - postman-cloud:///1f1c92e4-5a1b-4460-b17d-5f2656477a63
+      disabled: false
+order: 1000
